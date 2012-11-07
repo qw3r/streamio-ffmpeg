@@ -1,5 +1,5 @@
 module FFMPEG
-  class EncodingOptions < Hash
+  class EncodingOptions < HashWithIndifferentAccess
     def initialize(options = {})
       merge!(options)
     end
